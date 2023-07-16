@@ -83,10 +83,34 @@ nav{
 .bennar-img img{
     width: 100%;
 }
-/* nav bar style start */
+/* nav bar style end */
+
+/* Features section style strat */
+.features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    width: 85%;
+    margin: 5% auto;
+}
+.teme-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1%;
+    
+}
+.img{
+    width: 332;
+    height: 332;
+}
+.features-content{
+    width: 80%;
+    margin: 0 auto;
+}
 
 /*responsive style  start for small device */
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 688px) {
     .nav{
         flex-direction: column;
         justify-content: center;
@@ -96,6 +120,17 @@ nav{
         /* grid-template-columns: repeat(2, 1fr); */
       
         padding: 5px;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .teme-img{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+    .features-content{
+        margin-top: 10%;
     }
 }
 
