@@ -106,7 +106,7 @@ nav{
 }
 .features-content{
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 .features-content h1{
 font-size: 2.81rem;
@@ -219,26 +219,28 @@ font-weight: 700;
         flex-direction: column-reverse;
         justify-items: self-start;
         align-items: self-start;
-        margin-left:100px;
-        
-    
+        margin-left:50px;
     }
     .experience-img{
         margin-left: 100px;
         margin-top: 50px;
     }
    
-      /* .cards{
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-       justify-content: flex-start;
-      } */
 }
 @media screen and (min-width: 688px) and (max-width: 992px ){
     .features{
         grid-template-columns: repeat(1, 1fr);
         gap: 1%;
+    }
+    .experience{
+        flex-direction: column-reverse;
+        justify-items: self-start;
+        align-items: self-start;
+        margin-left:100px;
+    }
+    .experience-img{
+        margin-left: 100px;
+        margin-top: 50px;
     }
 }
 
